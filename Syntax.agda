@@ -40,6 +40,6 @@ data Term : Context → Type → Set where
     Term (Γ ,, A) B →
     Term Γ (A ⇒ B)
 
--- This corresponds to Γ ⊢ λx. x : Boolean → Boolean
+-- This corresponds to ∅ ⊢ λx. x : Boolean → Boolean
 example1 : Term ∅ (Boolean ⇒ Boolean)
 example1 = lam (V ∋-here)
